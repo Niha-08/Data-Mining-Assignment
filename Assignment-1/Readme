@@ -1,4 +1,4 @@
-Objective: To recognize handwritten digits using Machine Learning without neural networks.
+Objective: To recognize digits using Machine Learning without neural networks.
 
 Algorithm Used: K-Nearest Neighbors (KNN)
 
