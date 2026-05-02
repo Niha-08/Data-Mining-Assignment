@@ -1,0 +1,20 @@
+Objective: To classify iris flower species using K-Nearest Neighbors algorithm.
+
+Algorithm Used: K-Nearest Neighbors (KNN)
+KNN works by finding the nearest data points.
+
+d=\sqrt{\sum_{i=1}^{n}(x_i-y_i)^2}
+This is the distance formula KNN uses to find nearest neighbors.
+
+Dataset Used: UCI Machine Learning Repository Iris Dataset
+Contains:
+* 150 samples
+* 4 features
+* 3 classes
+
+Steps
+1. Load dataset
+2. Split into train/test
+3. Train KNN model
+4. Predict classes
+5. Evaluate accuracy
