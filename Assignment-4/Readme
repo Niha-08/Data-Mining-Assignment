@@ -1,0 +1,9 @@
+Objective: To classify breast cancer data using machine learning and evaluate performance using confusion matrix.
+
+Dataset Used: Breast Cancer Wisconsin Dataset
+Contains diagnostic measurements of breast tumors.
+
+Algorithm Used: K-Nearest Neighbors (KNN)Cross Validation
+5-fold cross validation was used to improve reliability.
+
+Confusion Matrix: A confusion matrix was generated to evaluate classification accuracy.
