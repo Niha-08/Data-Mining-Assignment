@@ -1,0 +1,12 @@
+Objective: To recognize handwritten digits using Machine Learning without neural networks.
+
+Algorithm Used: K-Nearest Neighbors (KNN)
+
+Dataset: Scikit-learn Digits Dataset
+
+Steps
+1.Load dataset
+2.Split into training/testing
+3.Train KNN classifier
+4.Predict test data
+5.Measure accuracy
