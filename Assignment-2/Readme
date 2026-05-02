@@ -1,0 +1,14 @@
+Objective: To classify SMS messages as spam or non-spam using Naive Bayes.
+
+Dataset Used: SMS Spam Collection Dataset
+Contains labeled text messages.
+
+Algorithm Used: Multinomial Naive Bayes
+
+Steps
+1.Load online dataset
+2.Convert text into numeric form
+3.Split data
+4.Train model
+5.Predict messages
+6.Calculate accuracy
