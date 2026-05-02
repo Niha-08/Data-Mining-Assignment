@@ -1,1 +1,47 @@
-kjhgf
+from sklearn.datasets import load_breast_cancer
+from sklearn.model_selection import train_test_split, cross_val_score
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
+import matplotlib.pyplot as plt
+
+# Load dataset
+data = load_breast_cancer()
+
+X = data.data
+y = data.target
+
+print("Dataset shape:", X.shape)
+print("Classes:", data.target_names)
+
+# Split dataset
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42
+)
+
+# Create KNN model
+model = KNeighborsClassifier(n_neighbors=5)
+
+# Cross-validation
+scores = cross_val_score(model, X, y, cv=5)
+
+print("Cross-validation scores:", scores)
+print("Average Accuracy:", scores.mean())
+
+# Train model
+model.fit(X_train, y_train)
+
+# Predict
+y_pred = model.predict(X_test)
+
+# Confusion Matrix
+cm = confusion_matrix(y_test, y_pred)
+
+print("\nConfusion Matrix:")
+print(cm)
+
+# Display matrix
+disp = ConfusionMatrixDisplay(confusion_matrix=cm,
+                              display_labels=data.target_names)
+
+disp.plot()
+plt.show()
